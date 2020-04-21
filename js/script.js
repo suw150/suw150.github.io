@@ -2,7 +2,7 @@ const myVideo = document.getElementById('myVideo');
 const myAudio = document.getElementById('myAudio');
 const enter = document.getElementById('enter');
 timer = null;
-let counter=0;
+let counter=-1;
 enter.addEventListener('cilck', enterPressed);
 enter.addEventListener('keydown', keyPressed);
 document.body.style.backgroundColor = "lightGray";
@@ -10,7 +10,7 @@ document.body.style.backgroundColor = "lightGray";
 //gif, audio
 const vids = ["asset/video00.webm","asset/video01.webm","asset/video02.webm", "asset/video03.webm", "asset/video04.webm"];
 const audio = ["asset/audio00.mp3", "asset/audio01.mp3", "asset/audio02.mp3", "asset/audio03.mp3", "asset/audio04.mp3"];
-let vidPlaying = 0;
+let vidPlaying = 1;
 let audioPlaying = 0;
 
 // function preload(vids){
